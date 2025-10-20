@@ -1,7 +1,5 @@
 import { notFound } from "next/navigation";
-import { Header } from "@/components/header";
 import { getProducts } from "@/components/products/actions";
-import { ProductCard } from "@/components/products/product-card";
 import { ProductsGrid } from "@/components/products/products-grid";
 import type { ProductModel } from "@/components/products/types";
 
@@ -14,11 +12,8 @@ export default async function Home() {
   }
 
   return (
-    <>
-      <Header />
-      <main>
-        <ProductsGrid products={products} />
-      </main>
-    </>
+    <main className="flex justify-center items-center min-h-full pb-16">
+      <ProductsGrid products={products} />
+    </main>
   );
 }

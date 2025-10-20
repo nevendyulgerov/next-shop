@@ -62,7 +62,9 @@ export const SingleProduct: FC<SingleProductProps> = ({ product }) => {
                 </div>
               </div>
 
-              <div className="mt-4">{product.discountPercentage}% Off</div>
+              <div className="mt-4 text-gray-500 dark:text-gray-400">
+                {product.discountPercentage}% Off
+              </div>
 
               <hr className="my-6 md:my-8 border-gray-200 dark:border-gray-500 mr-4" />
 

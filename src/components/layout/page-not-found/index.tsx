@@ -1,11 +1,16 @@
-import { FC } from 'react';
-import Link from 'next/link';
+import Link from "next/link";
+import type { FC } from "react";
 
 export const PageNotFound: FC = () => {
   return (
-    <div className="flex w-full h-full justify-center items-center" style={{ minHeight: 'inherit' }}>
+    <div
+      className="flex w-full h-full justify-center items-center"
+      style={{ minHeight: "inherit" }}
+    >
       <div className="flex flex-col justify-center items-center">
-        <span className="text-2xl mb-2 font-bold text-black dark:text-white">404 Not Found</span>
+        <span className="text-2xl mb-2 font-bold text-black dark:text-white">
+          404 Not Found
+        </span>
         <span className="text-lg font-semibold mb-4 text-black dark:text-white">
           Could not find the requested resource.
         </span>

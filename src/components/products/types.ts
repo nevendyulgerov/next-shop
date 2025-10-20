@@ -23,6 +23,10 @@ export interface ProductModel {
   meta: ProductMetaModel;
 }
 
+export interface ProductWithQuantityModel extends ProductModel {
+  quantity: number;
+}
+
 export interface ProductMetaModel {
   createdAt: string;
   updatedAt: string;
